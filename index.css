@@ -1,0 +1,140 @@
+body {
+    background-image: url("bg.jpg");
+    background-size:     cover;                   
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+/* Common CSS */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.float-right {
+    float: right;
+}
+
+/* TODO container  */
+#todoListContainer {
+    align-self: center;
+     width: 500px; 
+     margin: auto; 
+     text-align: center; 
+     /* background-color: rgb(156 203 243); */
+     background-image: linear-gradient(to right,#C6FFDD, #FBD786 , #f7797d);
+     padding: 10px;
+     border-bottom: 1px black solid;
+     margin-top: 60px;
+    }
+
+.header {
+    font-size: larger;
+    font-weight: bold;
+    font-family: monospace;
+ }
+
+/* Add task section */
+#addItemBtn{
+    margin-left: 10px;
+    float: right;
+    height: 50px;
+    margin-top: -5px;
+}
+
+#addItemBtn:hover {
+color: black;
+}
+
+#addItemInput {
+    float: left;
+    width: 85% !important;
+    height: 50px;
+    border: 2px solid #73AD21;
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.add-item-input-parent {
+    padding-bottom: 12px;
+    margin-bottom: 45px;
+}
+
+
+/* Task  */
+input[type=checkbox]
+{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    bottom: 10px;
+    position: absolute;
+    left: 15px;
+}
+
+.added-task-input:focus{
+    outline: none;
+}
+
+.added-task-input {
+    font-size: 22px;
+    vertical-align: bottom;
+    float: left;
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    cursor: pointer;
+    font-family: monospace;
+    outline: none;
+    background: transparent;
+    border: none
+}
+
+/* TODO row */
+.list-row { 
+    height:50px;
+    margin:20px;
+}
+
+
+.row-item {
+    text-align: left;
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid #73AD21;
+}
+
+.row-item:hover {
+    box-shadow: 0 0 15px rgba(33,33,33,.2); 
+    background-color: rgb(178, 210, 238);
+  }
+
+.fa-pencil {
+    color: rgb(219, 129, 26);
+    cursor: pointer;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.fa-trash {
+    color: red;
+    cursor: pointer;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+input[type=checkbox]:checked + .added-task-input{
+    text-decoration: line-through;
+  }
+
+ 
+.task-info {
+    visibility: visible;
+    padding-left: 225px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: monospace;
+}
+
